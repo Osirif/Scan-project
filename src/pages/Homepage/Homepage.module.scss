@@ -1,0 +1,256 @@
+/* Hero */
+.hero__section {
+    display: flex;
+
+    @media (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.hero__text_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 60px;
+
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+
+    @media (max-width: 550px) {
+        margin-top: 20px;
+    }
+}
+
+.hero__title {
+    font-family: 'Ferry';
+    font-size: 58px;
+    line-height: 68px;
+    margin-bottom: 20px;
+
+    @media (max-width: 1290px) {
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    @media (max-width: 1100px) {
+        font-size: 44px;
+        line-height: 54px;
+    }
+
+    @media (max-width: 900px) {
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    @media (max-width: 700px) {
+        font-size: 44px;
+        line-height: 54px;
+    }
+
+    @media (max-width: 550px) {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+
+.hero__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 400px;
+    margin-bottom: 70px;
+
+    @media (max-width: 550px) {
+        font-size: 15px;
+        line-height: 22px;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.hero__btn {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white);
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--blue);
+    transition: .2s ease;
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    @media (max-width: 1100px) {
+        width: 280px;
+    }
+
+    @media (max-width: 550px) {
+        width: 100%;
+    }
+}
+
+.hero__image_wrapper {
+    width: 50%;
+    margin-top: 20px;
+
+    @media (max-width: 900px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.error__wrapper_active {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    background-color: var(--red);
+    padding: 26px 12px;
+    border-radius: 5px;
+    transform: translateX(0);
+    transition: .5s ease;
+    z-index: 9;
+
+    p {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--white);
+    }
+}
+
+.error__wrapper {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    background-color: var(--red);
+    padding: 26px 12px;
+    border-radius: 5px;
+    transform: translateX(200%);
+    transition: .5s ease;
+
+    p {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--white);
+    }
+}
+
+/* Carousel */
+.carousel__section {
+    margin-top: 100px;
+}
+
+.carousel__title {
+    font-family: 'Ferry';
+    font-size: 42px;
+
+    @media (max-width: 900px) {
+        font-size: 38px;
+    }
+
+    @media (max-width: 550px) {
+        font-size: 32px;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 28px;
+    }
+}
+
+.carousel__wrapper {
+    margin-top: 70px;
+
+    @media (max-width: 550px) {
+        margin-top: 30px;
+    }
+}
+
+/* Image */
+.home__image_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.home__left__image {
+    width: 40%;
+
+    @media (max-width: 900px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.home__rigth__image {
+    width: 35%;
+
+    @media (max-width: 900px) {
+        display: none;
+    }
+}
+
+/* Tarifs */
+.tarifs__section {
+    margin-top: 105px;
+}
+
+.tarifs__title {
+    font-family: 'Ferry';
+    font-size: 42px;
+
+    @media (max-width: 900px) {
+        font-size: 38px;
+    }
+
+    @media (max-width: 550px) {
+        font-size: 32px;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 28px;
+    }
+}
+
+.tafifs__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 37px;
+    margin: 70px 0 118px 0;
+
+    @media (max-width: 1100px) {
+        gap: 20px;
+    }
+
+    @media (max-width: 900px) {
+        margin: 70px auto 118px auto;
+        width: 350px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media (max-width: 550px) {
+        margin: 35px auto 60px auto;
+    }
+}
